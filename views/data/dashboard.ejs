@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="stylee.css"> -->
+    <style>
+        body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background: url("bg3.jpg") no-repeat ;
+    height: 720px;
+}
+
+/* Container Styles */
+.container1{
+   width: 97%;
+    /* margin: 0 auto; */
+    padding: 20px;
+    
+    justify-content: center;
+    
+    
+}
+
+/* Row Styles */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    height: 600px;
+ 
+}
+.title1
+  {
+    width: 1150px;
+    display: flex;
+    /* text-align: center; */
+  }
+
+/* Service Box Styles */
+.box {
+    flex: 0 0 calc(33.33% - 20px);
+    background-color: #fff;
+    border: 2px solid #ddd;
+    margin-right: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    height: 260px;
+    border-bottom:6px solid rgb(159, 226, 191); 
+   
+   
+    transition: transform 0.2s ease; /* Add a smooth transition  
+    
+    animation: flow 5s infinite alternate; /* Add the flow animation */
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+
+    /* Box shadow for a raised effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.box:hover {
+    transform: scale(1.05);
+    border-color: rgb(159, 226, 191); /* Change border color on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+    border-radius: 2px;
+    border-width: 3px;
+}
+@keyframes flow {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(5px); /* Add a subtle up-and-down motion */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Style the last box in a row to remove the right margin */
+.box:nth-child(3n) {
+    margin-right: 0;
+}
+
+h2 {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 30px;
+    
+    
+}
+
+p {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 30px;
+    
+
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  
+    .row {
+        flex-wrap: wrap;
+    }
+    .box {
+        flex: 0 0 calc(50% - 20px);
+        margin-right: 0;
+       /* Ensure boxes don't exceed container width */
+    }
+}
+.container{
+    position:relative;
+    /* top: 100px; */
+    width: 100%;
+    height: 60px;
+    /* text-align: center; */
+    /* border: 3px solid green; */
+    background-color:#034417;
+    /* inline-size: none; */
+    display: inline-flex;
+    align-items: center;
+    /* padding: 5px;00 */
+    /* padding-left: 5px; */
+    color: aliceblue;
+    padding-bottom: 5px;
+    /* align-content: center; */
+    justify-content: center;
+    
+}
+.img1 {
+    float: left;
+    position:relative;
+    /* border: 1px solid #8a6a6a; */
+    /* border-radius: 4px; */
+    height: 40px;
+    padding: 10px;
+    width: 35px; padding-left: 20px;
+  }
+  .p1
+  {
+    font-size:25px;
+  }
+  
+  .dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .dropdown {
+    float:right;
+    position:relative;
+    display: inline-flex;
+    padding: 5px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    overflow: auto;
+    opacity: 0.9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #fffdfd;}
+  .show {display: block;}
+  .button11 {
+  background-color:#ffd139ec;
+  /* border:#141111; */
+  /* border-color: #141111; */
+  color: wheat;
+  /* padding: 12px 12px; */
+  /* padding-top: 4px;/ */
+  /* margin-top: 50px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 430px -120px;
+  cursor: pointer;
+  border-radius: 16px;
+  width: 200px;
+  height: 50px;
+   transform: scaleX(1);
+    transform-origin: left center;
+    transition: color 150ms cubic-bezier(0.1, 0.7, 0.6, 0.9); 
+    padding-left: 40px;
+  /* transition: transform 150ms cubic-bezier(0.1, 0.7, 0.6, 0.9); */
+  /* float: left; */
+}
+.button11:hover {  
+  background-color: #f5d56c;
+}
+.text1
+{
+  padding-top:4px;
+  text-align: center;
+  color: #141111;
+  justify-content: center;
+  font-weight: bold ;
+  font-size: medium;
+}
+.back
+{
+    width: 60px;
+    /* align-items: center; */
+    left: 50%;
+}
+  
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div >
+            <img class="img1" src="image2.png" alt="image2">
+        </div>
+        <div class="title1">
+            <h3 class="h21">Government of Kerala</h3>
+        </div>  
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">English</i></button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#home">English</a>
+              <a href="#about">हिंदी(Hindi)</a>
+              <a href="#contact">मराठी (Marathi)</a>
+              <a href="#contact">ਪੰਜਾਬੀ (Punjabi)</a>
+              <a href="#contact">ગુજરાતી (Gujarati)</a>
+              <a href="#contact">ಕನ್ನಡ (Kannada)</a>
+ 
+            </div>
+            <!-- <div id="myDropdown" class="dropdown-content" >
+              <a class="dropdown-item" href="#" tolang="en">English (default)</a>
+              <a class="dropdown-item" href="#" tolang="it">Italian</a>
+              <a class="dropdown-item" href="#" tolang="es">Spanish</a>
+              <a class="dropdown-item" href="#" tolang="de">German</a>
+            </div> -->
+          </div>
+        
+           
+    </div>
+    <h1>Our Features</h1>
+ <div class="container1"> 
+ <div class="row">
+ <div class="box">
+    <h2> Web-Based AI-Assisted Kiosk</h2>
+    <p> Accessible healthcare kiosks equipped with AI technology for easy use by rural residents and user-friendly interface to guide patients through the healthcare process.</p>
+ </div>
+<div class="box">
+    <h2>Aadhar Card Authentication </h2>
+<p> A secure and reliable user authentication using Aadhar cards.Biometric scanner for added identity verification and fraud prevention.</p></div>
+<div class="box">
+    <h2>eSanjeevani App Integration </h2>
+
+     <p>  Seamless integration with the eSanjeevani app, connecting patients to a broader healthcare ecosystem and enables access to resources, medical records, and healthcare professionals via the app.</p>
+</div>
+<div class="box">
+    <h2>Video Consultations</h2>
+    <p> Enabling real-time video consultations with nearby available doctors.Remote access to healthcare expertise for diagnosis, treatment, and medical advice.</p>
+</div>
+<div class="box">
+  <h2> Medication Delivery by Asha Workers </h2>
+
+ <p>Local Asha workers responsible for delivering prescribed medications to patients. Therefore, timely and convenient medication access for rural residents. </p>
+</div>
+<div class="box">
+    <h2>Health Data Collection </h2>
+
+<p>The kiosk collects and securely stores patient health data for reference and analysis.
+Enables healthcare providers to access patient histories and make informed decisions. <p>
+</div>
+<!-- <div>
+<div class="back"><a href="/"><button class="button11"><p class="text1">back to home</p></button></a></div>
+</div> -->
+ </div>
+ 
+    <script>
+            function myFunction() {
+document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) 
+{
+    if (!event.target.matches('.dropbtn')) 
+    {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+        for (i = 0; i < dropdowns.length; i++) 
+        {
+        var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show'))
+                {
+                openDropdown.classList.remove('show');
+                }
+        }
+    }
+}
+    </script>
+</body>
+</html>

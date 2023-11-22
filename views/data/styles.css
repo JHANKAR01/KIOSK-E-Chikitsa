@@ -1,0 +1,276 @@
+#main div {
+  -ms-flex: 1; /* IE 10 */
+  flex: 1;
+}
+body {
+    background-color: #fffdd2;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    position:relative;
+    /* top: 100px; */
+    width: 100%;
+    height: 60px;
+    /* text-align: center; */
+    /* border: 3px solid green; */
+    background-color:#034417;
+    /* inline-size: none; */
+    display: inline-flex;
+    /* padding: 5px;00 */
+    /* padding-left: 5px; */
+    color: aliceblue;
+    padding-bottom: 5px;
+    
+}
+.container1{
+  position:relative;
+  /* top: 100px; */
+  width: 100%;
+  height: 60px;
+  /* text-align: center; */
+  /* border: 3px solid green; */
+  background-color:#066824;
+  /* inline-size: none; */
+  display: inline-block;
+  /* padding: 5px;00 */
+  /* padding-left: 5px; */
+  color: aliceblue;
+  padding-bottom: 5px;
+  
+}
+.container2{
+  position:relative;
+  /* top: 100px; */
+  width: 100%;
+  height: 456px;
+  /* text-align: center; */
+  /* border: 3px solid green; */
+  /* background-color:#034417;/ */
+  /* inline-size: none; */
+  display: inline-flex;
+  /* padding: 5px;00 */
+  /* padding-left: 5px; */
+  color: aliceblue;
+  padding: 5px;
+
+
+  
+}
+  
+  .title1
+  {
+    width: 1150px;
+    display: flex;
+  }
+.img1 {
+    float: left;
+    position:relative;
+    /* border: 1px solid #8a6a6a; */
+    /* border-radius: 4px; */
+    height: 40px;
+    padding: 10px;
+    width: 35px; padding-left: 20px;
+  }
+  /* <img src="paris.jpg" alt="Paris"> */
+  .dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  
+  .dropdown {
+    float:right;
+    position:relative;
+    display: inline-flex;
+    padding: 5px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    overflow: auto;
+    opacity: 0.8;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #fffdfd;}
+  
+  .show {display: block;}
+.ull {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  overflow: hidden;
+  color: #ffffff;
+  background-color: transparent;
+  display: inline-flex;
+  float: right;
+}
+.ull1{
+
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    overflow: hidden;
+    color: #ffffff;
+    background-color: transparent;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 300px;
+    /* display: inline-flex;
+    float: right;
+   */
+}
+.li {
+  /* float: left; */
+  /* padding: 5px;
+  padding-top: 16px; */padding-right: 10px;
+}
+.li1{ 
+  padding-top: 25px;
+ padding-right: 10px;
+ padding-bottom: 25px;
+}
+
+.active {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+.button {
+  background-color:#914d25;
+  border:#141111;
+  border-color: #141111;
+  color: wheat;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  width: 125px;
+}
+
+.button:hover {  
+  background-color: #033a3a;
+}
+
+footer {
+  background: linear-gradient(to right, #034417, #066824); /* Use a gradient for two colors */
+  color: white; /* Text color for the footer */
+  padding: 20px; /* Add some padding for spacing */
+  text-align: center; /* Center-align the text */
+  position: relative;
+  margin-top: auto;
+}
+div.MAP
+{
+  display: inline-table;
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    
+
+}
+div.login
+{
+  margin-top: 75px;
+  color: #141111;
+  font-weight: bold;
+  width: 50%;
+  right: 100%;
+  height: 360px;
+  text-align: center;
+  
+}
+.or-txt{
+  background-color: white;
+}
+.or-line{
+  margin-top: -10px;
+  border-color: rgba(#333, 0.1);
+  width: 50%;
+}
+.finger1
+{
+  float: left;
+  position:relative;
+  /* border: 1px solid #8a6a6a; */
+  /* border-radius: 4px; */
+  height: 40px;
+  padding: 1px;
+  padding-top: 2px;
+  width: 40px; padding-left: 2px;
+}
+.li1{
+  /* text-align: center; */
+}
+.button1 {
+  background-color:#ffd139ec;
+  border:#141111;
+  border-color: #141111;
+  color: wheat;
+  padding: 12px 12px;
+  padding-top: 2px;
+  /* text-align: center; */
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  width: 175px;
+  height: 50px;
+  /* float: left; */
+}
+.button1:hover {  
+  background-color: #07516e;
+}
+.text1
+{
+  /* padding-top:4px; */
+  text-align: center;
+  color: #141111;
+  padding-bottom: 6px;
+  font-weight: bold ;
+  font-size: medium;
+}
+.aadhar
+{
+  float: left;
+  position:relative;
+  /* border: 1px solid #8a6a6a; */
+  /* border-radius: 4px; */
+  height: 30px;
+  padding: 1px;
+  width: 40px; padding-left: 2px;
+  padding-top: 7px;
+}
+.btnlogin
+{
+  height: 300px;
+  display: inline;
+}

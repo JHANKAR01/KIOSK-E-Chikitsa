@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <!-- <link rel="stylesheet" href="st.css"> -->
+    <style>body {
+        margin: 0;
+        padding: 0;
+        max-height: 698px;
+        height: 100%;
+        
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: row;
+        max-height: 698px;
+        height: 100%;
+        background-color: #fff;
+    }
+    
+    .left-section {
+        flex: 2;
+        background-color:rgb(64 92 64);; /* Light green color */
+        height: 100vh; /* 100% viewport height */
+        width: 258px;
+        /* padding: 10px; */
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+        
+        /* justify-content: center; */
+    }
+    
+    
+    .left-section img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        margin-bottom: 20px;
+        margin-top: 60px;
+        margin-bottom: 80px;
+        /* background-color: brown; */
+        /* float: top;/ */
+    }
+    
+    .right-section {
+        flex: 7;
+        background-color:#fff; /* Grayish color */
+        /* height: 100vh; 100% viewport height */
+        max-height: 698px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        
+    }
+    
+    .personal-info {
+        text-align: left;
+        margin-left: 5px;
+        font-size: 16px;
+        color: whitesmoke;
+        font-size: 25px;
+        font-weight: 900;
+        line-height: 45px;
+    }
+    
+    .personal-info p {
+        margin: 5px 0;
+    }
+    
+    .heading {
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-top: 10px;
+        color: black;
+        font-size: 50px;
+    
+        
+    }
+    
+    .microphone-logo {
+        font-size: 48px;
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* bottom: 100px; */
+        margin-right: 160px;
+      
+        
+    
+    }
+    
+    .microphone-logo img{
+        width: 150px;
+        height: 150px;
+        /* opacity: 0.5; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        position: absolute;
+        bottom: 400px;
+        text-align: center;
+       
+    }
+    .hindi-text {
+        background-color: #333;
+        color: beige;
+        text-align: center;
+        padding: 10px;
+        border-radius: 10px;
+        position: fixed;
+        bottom: 150px;
+        
+       
+    
+    }</style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+                <div class="profile-picture"></div>
+                <img src="image.jpeg" alt="User Profile Image">
+            
+            <div class="personal-info">
+                <p>Name: <%= myUser.name %></p>
+                <p>Aadhar No: <%= myUser.aadhar %></p>
+                <p>Age: <%= myUser.age %></p>
+                <p>Occupation: <%= myUser.occupation %></p>
+                
+                <p>S/O: <%= myUser.parent %></p>
+            </div>
+        </div>
+        <div class="right-section">
+            <h1 class="heading">Medical Health Kiosk System</h1>
+            <div class="microphone-logo">
+                <img src="micro11.png" alt="image not loaded">
+            </div>
+            <div class="hindi-text">हिंदी में दर्ज करें</div>
+           
+        </div>
+        <!-- <footer class="footer">
+            Footer content goes here -->
+            <!-- <p>&copy; By Team Iterators , IET-DAVV INDORE , PS:-SIH1325</p>
+        </footer> --> 
+    </div>
+    <!-- <audio id="audio" autoplay loop  controls src="लॉगिन के लिए आधार या.m4a"></audio> -->
+    <script>
+    //     function myFunction() {
+    // document.getElementById("myDropdown").classList.toggle("show");
+    // }
+    
+    // // Close the dropdown if the user clicks outside of it
+    // window.onclick = function(event) {
+    // if (!event.target.matches('.dropbtn')) {
+    // var dropdowns = document.getElementsByClassName("dropdown-content");
+    // var i;
+    // for (i = 0; i < dropdowns.length; i++) {
+    // var openDropdown = dropdowns[i];
+    // if (openDropdown.classList.contains('show')) {
+    // openDropdown.classList.remove('show');
+    // }
+    // }
+    // }
+    // }
+    // console.log(process);
+    let text = "I am your AI telemadicate ,aapko kya dikkat hai, kya ap ko fever hai";
+    let text1 ="Namaste <%= myUser.name %>";
+    
+    // Create a new SpeechSynthesisUtterance object
+    var utterance = new SpeechSynthesisUtterance();
+    var  utterThis= new SpeechSynthesisUtterance();
+    
+    // Set the text and voice of the utterance
+    utterance.text = text;
+    utterThis.text=text1;
+    utterThis.voice = window.speechSynthesis.getVoices()[7];
+    utterThis.rate = 0.5;
+    utterThis.pitch = 7;
+    // utterThis.voice = voices[7];
+    utterance.voice = window.speechSynthesis.getVoices()[7];
+    utterance.rate = 0.5;
+    // utterance.voice = voices[7];
+    window.speechSynthesis.speak(utterThis);
+    // // Speak the utterance
+    window.speechSynthesis.speak(utterance);
+    //   const speechInterval=setInterval(()=>{
+         
+         
+    // //   },10000);
+    // //   const useractivity=(id)=>{
+    // //   clearInterval(id)
+    // // }
+    // document.addEventListener('DOMContentLoaded', function() {
+    //   const el=document.createElement('div');
+    //   el.addEventListener('click',()=>{
+    //     window.speechSynthesis.speak(utterance);
+    //   })
+    //   el.click();
+    // }, );
+      
+    
+    
+    
+    </script>
+   
+</body>
+</html>

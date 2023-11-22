@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+      #main div {
+  -ms-flex: 1; /* IE 10 */
+  flex: 1;
+}
+body {
+    background-color: #fffdd2;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /* width: 100px; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    position:relative;
+    /* top: 100px; */
+    width: 100%;
+    height: 60px;
+    /* text-align: center; */
+    /* border: 3px solid green; */
+    background-color:#034417;
+    /* inline-size: none; */
+    display: inline-flex;
+    /* padding: 5px;00 */
+    /* padding-left: 5px; */
+    color: aliceblue;
+    padding-bottom: 5px;
+    
+}
+.container1{
+  position:relative;
+  /* top: 100px; */
+  width: 100%;
+  height: 60px;
+  /* text-align: center; */
+  /* border: 3px solid green; */
+  background-color:#066824;
+  /* inline-size: none; */
+  display: inline-block;
+  /* padding: 5px;00 */
+  /* padding-left: 5px; */
+  color: aliceblue;
+  padding-bottom: 5px;
+  
+}
+.container2{
+  /* position:relative; */
+  /* top: 100px; */
+  width: 100%;
+  height: 480px;
+  /* text-align: center; */
+  /* border: 3px solid green; */
+  /* background-color:#034417;/ */
+  /* inline-size: none; */
+  display: inline-flex;
+  /* padding: 5px;00 */
+  /* padding-left: 5px; */
+  color: aliceblue;
+  padding: 5px;
+  background: url("bg1.jpg") no-repeat ;
+  /* background:transparent; */
+  background-size: cover;
+  display: flex;
+
+  
+}
+  
+  .title1
+  {
+    width: 1150px;
+    display: flex;
+  }
+.img1 {
+    float: left;
+    position:relative;
+    /* border: 1px solid #8a6a6a; */
+    /* border-radius: 4px; */
+    height: 40px;
+    padding: 10px;
+    width: 35px; padding-left: 20px;
+  }
+  /* <img src="paris.jpg" alt="Paris"> */
+  .dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  .p1
+  {
+    font-size:25px;
+  }
+  
+  
+  .dropdown {
+    float:right;
+    position:relative;
+    display: inline-flex;
+    padding: 5px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    overflow: auto;
+    opacity: 0.9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #fffdfd;}
+  
+  .show {display: block;}
+.ull {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px;
+  overflow: hidden;
+  color: #ffffff;
+  background-color: transparent;
+  display: inline-flex;
+  float: right;
+}
+.ull1{
+
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    overflow: hidden;
+    color: #ffffff;
+    background-color: transparent;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    height: 300px;
+    /* display: inline-flex;
+    float: right;
+   */
+}
+.li {
+  /* float: left; */
+  /* padding: 5px;
+  padding-top: 16px; */padding-right: 10px;
+}
+.li1{ 
+  padding-top: 25px;
+ padding-right: 10px;
+ padding-bottom: 25px;
+}
+
+.active {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+}
+.button {
+  background-color:#914d25;
+  border:#141111;
+  border-color: #141111;
+  color: wheat;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  width: 125px;
+}
+
+.button:hover {  
+  background-color: #033a3a;
+}
+
+footer {
+  background: linear-gradient(to right, #034417, #066824); /* Use a gradient for two colors */
+  color: white; /* Text color for the footer */
+  padding: 20px; /* Add some padding for spacing */
+  text-align: center; /* Center-align the text */
+  position: relative;
+  margin-top: auto;
+}
+div.MAP
+{
+  display: inline-table;
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    
+
+}
+div.login
+{
+  margin-top: 75px;
+  color: #141111;
+  font-weight: bold;
+  width: 50%;
+  right: 100%;
+  height: 482px;
+  text-align: center;
+  
+  
+}
+
+.or-txt{
+  background-color: white;
+}
+.or-line{
+  margin-top: -10px;
+  border-color: rgba(#333, 0.1);
+  width: 50%;
+}
+.finger1
+{
+  float: left;
+  position:relative;
+  /* border: 1px solid #8a6a6a; */
+  /* border-radius: 4px; */
+  height: 40px;
+  padding: 1px;
+  padding-top: 2px;
+  width: 40px; padding-left: 2px;
+}
+.li1{
+  text-align: center;
+}
+.button1 {
+  background-color:#ffd139ec;
+  border:#141111;
+  border-color: #141111;
+  color: wheat;
+  padding: 12px 12px;
+  padding-top: 2px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  width: 200px;
+  height: 50px;
+  /* float: left; */
+}
+.button11 {
+  background-color:#ffd139ec;
+  /* border:#141111; */
+  /* border-color: #141111; */
+  color: wheat;
+  padding: 12px 12px;
+  padding-top: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  width: 200px;
+  height: 50px;
+   transform: scaleX(1);
+    transform-origin: left center;
+    transition: color 150ms cubic-bezier(0.1, 0.7, 0.6, 0.9); 
+  /* transition: transform 150ms cubic-bezier(0.1, 0.7, 0.6, 0.9); */
+  /* float: left; */
+}
+/* .button11:hover {  
+  background-color: #07516e;
+} */
+.button12
+{ background-color:#ffd139ec;
+  /* border:#141111; */
+  /* border-color: #141111; */
+  cursor: pointer;
+  /* padding-right:  */
+
+  color: black;
+  border-radius: 50%;
+  text-align: center;
+  border: 2px solid black;
+  /* background-color: white; */
+  /* text-decoration: solid; */
+  font-weight: bolder;
+  font-size: 25px;
+  height: 50px;
+  width: 50px;
+  padding: 8px 12px;
+  padding-bottom: 12px;
+  margin: 4px 2px;
+}
+.button22
+{ background-color:#ffd139ec;
+  border:#141111;
+  border-color: #141111;
+  cursor: pointer;
+  /* padding-right:  */
+
+  color: black;
+  border-radius: 50%;
+  text-align: center;
+  border: 2px solid black;
+  /* background-color: white; */
+  /* text-decoration: solid; */
+  font-weight: bolder;
+  font-size: 25px;
+  height: 50px;
+  width: 50px;
+  padding: 8px 12px;
+  padding-bottom: 12px;
+  margin: 4px 2px;
+}
+.button22:hover {  
+  background-color: #07516e;
+}
+.button12:hover {  
+  background-color: #07516e;
+}
+.button1:hover {  
+  background-color: #07516e;
+}
+.text1
+{
+  padding-top:4px;
+  text-align: center;
+  color: #141111;
+  padding-top: 0px;
+  padding-bottom: px;
+  font-weight: bold ;
+  font-size: medium;
+}
+.adhar
+{
+  
+  padding-top:10px;
+  text-align: center;
+  /* justify-content: center; */
+  color: #141111;
+  /* padding-bottom: 3px; */
+  font-weight: bold ;
+  font-size: larger;
+  
+  
+}
+.adhar1
+{
+  justify-content: center;
+}
+.aadhar
+{
+  float: left;
+  position:relative;
+  /* border: 1px solid #8a6a6a; */
+  /* border-radius: 4px; */
+  height: 30px;
+  justify-content: center;
+  padding: 1px;
+  width: 40px; padding-left: 2px;
+  padding-top: 5px;
+}
+.btnlogin
+{
+  height: 300px;
+  display: inline;
+}
+.kiosk
+{
+  float: left;
+    position:relative;
+    /* border: 1px solid #8a6a6a; */
+    /* border-radius: 4px; */
+    height: 64px;
+    padding-bottom: 2px;
+    /* image-resolution: 120px 50px; */
+    /* padding: 2px; */
+    padding-left: 60px;
+    width: 160px; 
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div >
+            <img class="img1" src="image2.png" alt="image2">
+        </div>
+        <div class="title1">
+            <h2>Government of Kerala</h2>
+        </div>  
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">English</i></button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#home">English</a>
+              <a href="#about">हिंदी(Hindi)</a>
+              <a href="">(മലയാളം)Malayalam</a>
+              <a href="#contact">मराठी (Marathi)</a>
+              <a href="#contact">ਪੰਜਾਬੀ (Punjabi)</a>
+              <a href="#contact">ગુજરાતી (Gujarati)</a>
+              <a href="#contact">ಕನ್ನಡ (Kannada)</a>
+ 
+            </div>
+            <!-- <div id="myDropdown" class="dropdown-content" >
+              <a class="dropdown-item" href="#" tolang="en">English (default)</a>
+              <a class="dropdown-item" href="#" tolang="it">Italian</a>
+              <a class="dropdown-item" href="#" tolang="es">Spanish</a>
+              <a class="dropdown-item" href="#" tolang="de">German</a>
+            </div> -->
+          </div>
+        
+           
+    </div>
+    <div class="container1">
+      <div >
+        <img class="kiosk" src="Untitled (2).png" alt="image2">
+    </div>
+      <ul class="ull">
+        <li class="li"><a class="active" href="https://healthid.ndhm.gov.in/">ABHA(Health ID)</a></li>
+        <li class="li"><a class="active" href="./dashboard">DASHBOARD</a></li>
+        <li class="li"><a class="active" href="#contact">FAQ</a></li>
+        <li class="li" ><a class="button" href="/register" >Register</a></li>
+      </ul>
+    </div>
+    <div class="container2" >
+      <div class="login">
+        
+        <p class="p1">Login To your E-Sanjeevani Account</p>
+        <div class="btnlogin">
+          <ul class="ull1">
+            <div>
+              <li class="li1"><a  class="adhar" href="./login"><button class="button11"><img class="finger1" src="finger_print2.webp" alt=""><p class="adhar1">AADHAR</p></a></button></a>
+            </li>
+          </div>
+          
+          <li class="li1">
+           <div class="or-line-block pt-2">
+             <h6 class="text-center m-0"></h6>
+             <hr class="or-line">
+           </div>
+          </li> 
+          <li class="li1"><a href="./login"><button class="button11"><img class="aadhar" src="aadar.png" alt=""> <p class="text1">BIOMETRIC</p></button></a>
+          </li>
+         </ul>
+        </div>
+        
+      </div>
+      <div class="MAP">
+        <!-- <img class="img3" src="image3.png" alt="image3"> -->
+      </div>
+      
+    </div>
+    
+    <footer>
+      <!-- Footer content goes here -->
+      <p>&copy; By Team Iterators , IET-DAVV INDORE , PS:-SIH1325</p>
+  </footer>
+  <script>
+    function myFunction() {
+document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+if (!event.target.matches('.dropbtn')) {
+var dropdowns = document.getElementsByClassName("dropdown-content");
+var i;
+for (i = 0; i < dropdowns.length; i++) {
+var openDropdown = dropdowns[i];
+if (openDropdown.classList.contains('show')) {
+openDropdown.classList.remove('show');
+}
+}
+}
+}
+// console.log(process);
+let text = "Login kae leyae aadhar ya  Biometric koo chuniyae ";
+let text1 ="Wellcome";
+
+// Create a new SpeechSynthesisUtterance object
+var utterance = new SpeechSynthesisUtterance();
+var  utterThis= new SpeechSynthesisUtterance();
+
+// Set the text and voice of the utterance
+utterance.text = text;
+utterThis.text=text1;
+utterThis.voice = window.speechSynthesis.getVoices()[7];
+utterThis.rate = 0.5;
+utterThis.pitch = 7;
+// utterThis.voice = voices[7];
+utterance.voice = window.speechSynthesis.getVoices()[7];
+utterance.rate = 0.5;
+// utterance.voice = voices[7];
+window.speechSynthesis.speak(utterThis);
+// // Speak the utterance
+window.speechSynthesis.speak(utterance);
+//   const speechInterval=setInterval(()=>{
+     
+     
+// //   },10000);
+// //   const useractivity=(id)=>{
+// //   clearInterval(id)
+// // }
+// document.addEventListener('DOMContentLoaded', function() {
+//   const el=document.createElement('div');
+//   el.addEventListener('click',()=>{
+//     window.speechSynthesis.speak(utterance);
+//   })
+//   el.click();
+// }, );
+  
+
+
+
+</script> 
+</body>
+</html>
